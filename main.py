@@ -15,7 +15,7 @@ def send_otp_email_thread(email, otp):
         smtp_port = 587 
         #The sender email and password are supposed to be stored in env file when working on a production environment
         sender_email = 'taskintern2@gmail.com'    
-        sender_password = 'ccuv ctay aegb tjdc' 
+        sender_password = 'ccuv ctay aegb tjdc' #App password from Gmail
 
         message = f"Your OTP is: {otp}"
         subject = "OTP Verification"
