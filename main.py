@@ -13,7 +13,8 @@ def send_otp_email_thread(email, otp):
     try:
         smtp_server = 'smtp.gmail.com'  
         smtp_port = 587 
-        sender_email = 'taskintern2@gmail.com'  
+        #The sender email and password are supposed to be stored in env file when working on a production environment
+        sender_email = 'taskintern2@gmail.com'    
         sender_password = 'ccuv ctay aegb tjdc' 
 
         message = f"Your OTP is: {otp}"
